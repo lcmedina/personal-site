@@ -17,6 +17,16 @@ body {
     font-family: 'Windows 95';
 }
 
+body img {
+    width: 100px;
+    height: 100px;
+}
+
+.buffer {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
 /* Nav */
 
  .navbar-main {
