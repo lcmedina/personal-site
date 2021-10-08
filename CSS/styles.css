@@ -1,108 +1,143 @@
+:root{
+    --bgPrimary: #c0c0c0;
+    --bgSecondary: #008081;
+    --bgTertiary: #000181;
+}
+
+@font-face {
+    font-family: 'Windows 95';
+    src: url('./fonts/w-95-sans-serif.woff2') format('woff2'),
+        url('./fonts/w-95-sans-serif.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
-    margin: 0;
-    font-family: 'Raleway', sans-serif;
+    background-color: var(--bgSecondary);
+    font-family: 'Windows 95';
 }
 
-h1 {
-    font-family: 'Shadows Into Light Two', cursive;
+/* Nav */
+
+ .navbar-main {
+    position: absolute;
+    top: 0;
+    padding: 0;
+    width: 100%;
+    z-index: 100;
 }
 
-h4 {
-    font-family: 'Montserrat', sans-serif;
+.navbar {
+    height: 38px;
+    background: #C0C0C0;
+    padding-left: 4px;
+    padding-right: 4px;
+    border-bottom: 2px solid #FCFCFC;
 }
 
-p {
-    font-size: 1.1em;
+.navbar-secondary {
+    background: #008081;
 }
 
-.container {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
+.navbar-tertiary {
+    background: #000181;
 }
 
-.top-container {
+.navbar-footer {
+    position: relative;
+}
+
+.navbar-main .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(255, 255, 255, 0.9)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar .navbar-nav .nav-link {
+    position: relative;
+    font-size: .65rem;
+    color: black;
+    text-transform: normal;
+    background: #C0C0C0;
+    letter-spacing: 0;
+    font-weight: 400;
+    padding: 4px 10px;
+}
+
+.navbar .navbar-nav .nav-link .icon {
+    position: absolute;
+    left: 0;
+    top: -2px;
+}
+
+.navbar .navbar-nav .nav-item {
+    margin-right: 5px;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+    color: black;
+}
+
+.navbar .time {
+    font-size: .65rem;
+    border-top: 1px solid #08080E;
+    border-left: 1px solid #08080E;
+    border-right: 1px solid #FCFCFC;
+    border-bottom: 1px solid #FCFCFC;
+    padding: 5px 15px;
+}
+
+.navbar .navbar-nav .nav-link:before {
+    content: '';
+    display: block;
     width: 100%;
     height: 100%;
-    background-color: #FFCB77;
-    padding-top: 50px;
-    padding-bottom: 50px;
-   
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-top: 2px solid #FCFCFC;
+    border-left: 2px solid #FCFCFC;
+    border-bottom: 2px solid #08080E;
+    border-right: 2px solid #08080E;
 }
 
-.middle-container {
-    width: 100%;
-    height: 100%;
-    background-color: #FEF9EF;
+.navbar .navbar-nav .nav-link .nav-link-inner-text {
+    margin-left: .25rem;
 }
 
-.button {
-    background-color: #227C9D;
-    border: none;
-    border-radius: 8px;
-    color: #FEF9EF;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
-    padding: 24px 12px;
-    position: relative;
-    left: 100px;
-}
-.button:hover {
-    background-color: #17C3B2;
+.navbar .navbar-nav .nav-item .media:not(:last-child) {
+    margin-bottom: 1.5rem;
 }
 
-.intro{
-    text-align: center;
-    border-width: 2px;
-    border-color: #FEF9EF;
-    border-style: solid;
-    border-radius: 25px;
-    height: 300px;
-    width: 400px;
-    position: relative;
-    left: 500px;
-    padding: 60px;
+.navbar .navbar-nav .dropdown .dropdown-menu {
+    top: calc(100% + 7px);
 }
 
-.head-style {
-    padding-top: 20px;
-    padding-left: 20px;
-    padding-right: 10px;
-    padding-bottom: 10px;
+.navbar .navbar-nav .dropdown .dropdown-item {
+    font-weight: 400;
+    font-size: .85rem;
 }
 
-.NYC {
-    height: 450px;
-    width: 650px;
-    border-radius: 5px 200px;
-    position: relative;
-    right: -50px;
-    bottom: 150px;
+.navbar .navbar-nav .mega-dropdown {
+    position: static;
 }
 
-.icons {
-    width: 65px;
-    height: 65px;
+.navbar .navbar-nav .mega-dropdown .dropdown-menu {
+    width: calc(100% - 35px);
+    left: 20px;
+    padding: 20px;
+    border-radius: 0.2rem;
+    overflow: hidden;
 }
 
-#myName {
-    padding-left: 5px;
-    padding-right: 5px;
-    font-size: 3em;
+.navbar .navbar-nav .mega-dropdown .dropdown-item {
+    border-radius: 0.2rem;
 }
 
-#text{
-    text-align: center;
-    height: 85px;
-    width: 450px;
-    position: relative;
-    left: 750px;
-    bottom: 450px;
+.navbar .navbar-nav .mega-dropdown h6 {
+    margin: 15px 0;
+    font-size: 15px;
+    font-weight: 500;
 }
 
-@media only screen and (max-width: 768px) {
-    body {
-        width: 100%;
-    }
-  }
+.navbar .navbar-nav .nav-link-arrow {
+    transition: transform 0.2s ease;
+}

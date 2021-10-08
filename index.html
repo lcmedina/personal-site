@@ -7,38 +7,35 @@
         <title>Laura Medina</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="CSS/styles.css">
         <link rel="icon" href="Images/favicon.ico">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway&family=Shadows+Into+Light+Two&display=swap" rel="stylesheet">
-
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+        <link rel="stylesheet" href="CSS/styles.css">
     </head>
     <body>
-        <nav id="navbar">
-            <a href="/index.html">Home</a>
-            <a href="/about.html">About</a>
-            <a href="/contact.html">Contact</a>
-            <a href="/projects.html">Projects</a>
+        <nav class="navbar navbar-expand-lg navbar-dark justify-content-between mb-3">
+            <ul class="navbar-nav navbar-nav-hover flex-row align-items-center">
+                <li class="nav-item">
+                    <a href="https://github.com/lcmedina/personal-site" class="nav-link" role="button">
+                        <span class="nav-link-inner-text">📺 Repo</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="https://demo.themesberg.com/windows-95-ui-kit/docs/introduction.html" class="nav-link" role="button">
+                        <span class="nav-link-inner-text">🎆 UI Kit</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="time text-center" id="displayTime">
+                <span class="text-uppercase">1:47 PM</span>
+            </div>
         </nav>
-        <div class="container">
-            <div class="top-container container-sm">
-                <div class="intro container-sm">
-                    <h1 id="myName">Hi, I'm Laura & I'm a full stack developer.</h1>
-                    <h4>I'm fueled by coffee, tacos and a love of learning. Excited to share what I'm working on with you!</h4>
-                </div>
-            </div>
-            <div class="middle-container container-sm">
-                <img src="images/NYC2018.jpg" alt="Photo of me in DUMBO, NYC" class="NYC">
-                <div id="text">
-                    <p>Like many millenials I was first introduced to coding in the early MySpace and Xanga days. I thought it was so awesome building something from scratch and seeing it displayed out on the world wide web. Eager to expand my portfolio and have some fun along the way!
-                    </p>
-                    <br>
-                    <a href="mailto:lcmedina390@gmail.com"><img src="images/email.svg" class="icons"></a>
-                    <a href="https://github.com/lcmedina"><img src="images/github.svg" class="icons"></a>
-                    <a href="https://www.linkedin.com/in/laura-medina-90b8bb25/"><img src="images/linkedin.svg" class="icons"></a>
-                </div>
-            </div>
-        </div>
-        <script src="Scripts/script.js" async defer></script>
+
+
+
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
+        <script src="JS/script.js" async defer></script>
     </body>
 </html>
