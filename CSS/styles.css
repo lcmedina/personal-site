@@ -1,153 +1,17 @@
-:root{
-    --bgPrimary: #c0c0c0;
-    --bgSecondary: #008081;
-    --bgTertiary: #000181;
-}
-
-@font-face {
-    font-family: 'Windows 95';
-    src: url('./fonts/w-95-sans-serif.woff2') format('woff2'),
-        url('./fonts/w-95-sans-serif.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
 body {
-    background-color: var(--bgSecondary);
+    background-color: #008081;
     font-family: 'Windows 95';
 }
-
 body img {
     width: 100px;
     height: 100px;
+    cursor: pointer;
 }
-
 .buffer {
-    margin-top: 100px;
+    margin-top: 50px;
     margin-bottom: 100px;
 }
-
-/* Nav */
-
- .navbar-main {
-    position: absolute;
-    top: 0;
-    padding: 0;
-    width: 100%;
-    z-index: 100;
-}
-
-.navbar {
-    height: 38px;
-    background: #C0C0C0;
-    padding-left: 4px;
-    padding-right: 4px;
-    border-bottom: 2px solid #FCFCFC;
-}
-
-.navbar-secondary {
-    background: #008081;
-}
-
-.navbar-tertiary {
-    background: #000181;
-}
-
-.navbar-footer {
-    position: relative;
-}
-
-.navbar-main .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(255, 255, 255, 0.9)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-}
-
-.navbar .navbar-nav .nav-link {
-    position: relative;
-    font-size: .65rem;
-    color: black;
-    text-transform: normal;
-    background: #C0C0C0;
-    letter-spacing: 0;
-    font-weight: 400;
-    padding: 4px 10px;
-}
-
-.navbar .navbar-nav .nav-link .icon {
-    position: absolute;
-    left: 0;
-    top: -2px;
-}
-
-.navbar .navbar-nav .nav-item {
-    margin-right: 5px;
-}
-
-.navbar .navbar-nav .nav-link:hover {
-    color: black;
-}
-
-.navbar .time {
-    font-size: .65rem;
-    border-top: 1px solid #08080E;
-    border-left: 1px solid #08080E;
-    border-right: 1px solid #FCFCFC;
-    border-bottom: 1px solid #FCFCFC;
-    padding: 5px 15px;
-}
-
-.navbar .navbar-nav .nav-link:before {
-    content: '';
-    display: block;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    border-top: 2px solid #FCFCFC;
-    border-left: 2px solid #FCFCFC;
-    border-bottom: 2px solid #08080E;
-    border-right: 2px solid #08080E;
-}
-
-.navbar .navbar-nav .nav-link .nav-link-inner-text {
-    margin-left: .25rem;
-}
-
-.navbar .navbar-nav .nav-item .media:not(:last-child) {
-    margin-bottom: 1.5rem;
-}
-
-.navbar .navbar-nav .dropdown .dropdown-menu {
-    top: calc(100% + 7px);
-}
-
-.navbar .navbar-nav .dropdown .dropdown-item {
-    font-weight: 400;
-    font-size: .85rem;
-}
-
-.navbar .navbar-nav .mega-dropdown {
-    position: static;
-}
-
-.navbar .navbar-nav .mega-dropdown .dropdown-menu {
-    width: calc(100% - 35px);
-    left: 20px;
-    padding: 20px;
-    border-radius: 0.2rem;
-    overflow: hidden;
-}
-
-.navbar .navbar-nav .mega-dropdown .dropdown-item {
-    border-radius: 0.2rem;
-}
-
-.navbar .navbar-nav .mega-dropdown h6 {
-    margin: 15px 0;
-    font-size: 15px;
-    font-weight: 500;
-}
-
-.navbar .navbar-nav .nav-link-arrow {
-    transition: transform 0.2s ease;
+.card img {
+    float: left;
+    margin: 10px;
 }
