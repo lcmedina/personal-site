@@ -7,6 +7,9 @@ body img {
     height: 100px;
     cursor: pointer;
 }
+.icon-label {
+    font-size: 12px;
+}
 .buffer {
     margin-top: 50px;
     margin-bottom: 100px;
