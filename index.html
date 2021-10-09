@@ -15,7 +15,8 @@
     </head>
     <body>
         <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-dark justify-content-between mb-3">
+        <nav class="navbar navbar-expand-xs navbar-dark justify-content-between mb-3">
+          <div class="container-fluid">
             <ul class="navbar-nav navbar-nav-hover flex-row align-items-center">
                 <li class="nav-item">
                     <a href="https://www.linkedin.com/in/laura-medina-90b8bb25/" class="nav-link" role="button" target="_blank">
@@ -31,6 +32,7 @@
             <div class="time text-center" id="displayTime">
                 <span class="text-uppercase" ></span>
             </div>
+          </div>
         </nav>
 
         <!-- "Desktop" -->
@@ -56,7 +58,7 @@
                 </button>
                 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                   <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-                    <div class="modal-content card">
+                    <div class="modal-content card card-tertiary">
                       <h5 class="card-header" id="exampleModalLabel">My Resume</h5>
                       <div class="card-body">
                         <p class="lead">Summary</p>
@@ -71,44 +73,75 @@
                         <p><u>B.S. Hotel and Restaurant Management</u> | 2008 - 2013 | <em>University of Houston</em></p>
                         <p><small>A specialized business degree combining traditional business courses in accounting, economics and law with social sciences, hospitality marketing, human resources and communications.</small></p>
                       </div>
-                      <div class="d-flex justify-content-end mt-3 card-footer">
-                        <a href="/LauraMedinaResume.pdf" download><button type="button" class="btn btn-primary">Download</button></a>
+                      <div class="d-flex justify-content-between mt-3 card-footer">
+                        <button type="button" class="btn btn-tertiary border-dark" data-bs-dismiss="modal" aria-label="Close">Close</button>
+                        <a href="/LauraMedinaResume.pdf" download><button type="button" class="btn btn-primary border-dark">Download</button></a>
                       </div>
                     </div>
                   </div>
                 </div>
                 <p class="icon-label">My Resume</p>
               </div>
-              <div class="col-md-2"></div>
               <div class="col-md-auto text-center">
-                <img src="/Images/skills.jpeg">
-                <p class="icon-label">Skills</p>
+                <button type="button" data-bs-toggle="modal" data-bs-target="#skillsModal" style="border: none; background-color: transparent;">
+                  <img src="/Images/skills.jpeg" alt="skills">
+                </button>
+                <div class="modal fade" id="skillsModal" tabindex="-1" aria-labelledby="skillsModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content card card-tertiary">
+                      <h5 class="card-header" id="skillsModalLabel">My Skills</h5>
+                      <div class="card-body">
+                        <div class="container">
+                          <div class="row">
+                            <div class="col"><img src="./Images/skills-icons/css.png" alt="css"></div>
+                            <div class="col"><img src="./Images/skills-icons/html.png" alt="html"></div>
+                            <div class="col"><img src="./Images/skills-icons/javascript.png" alt="JavaScript"></div>
+                          </div>
+                          <div class="row">
+                            <div class="col"><img src="./Images/skills-icons/nodejs.png" alt="node.js"></div>
+                            <div class="col"><img src="./Images/skills-icons/react.png" alt="react"></div>
+                            <div class="col"><img src="./Images/skills-icons/Bootstrap_logo.svg.png" alt="bootstrap"></div>
+                          </div>
+                          <div class="row">
+                            <img src="./Images/skills-icons/mongo.png" alt="mongoDB">
+                          </div>
+                        </div>
+                        <div><p><small>Icons made by <a href="https://www.flaticon.com/authors/flat-icons" title="Flat Icons">Flat Icons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></small></p></div>
+                        <div class="d-flex justify-content-center mt-3 card-footer">
+                          <button type="button" class="btn btn-tertiary border-dark" data-bs-dismiss="modal" aria-label="Close">Close</button></div>
+                      </div>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="icon-label">Skills</p>
+                </div>
               </div>
             </div>
-            <div class="row justify-content-md-center buffer">
-                <div class="col-md-2"></div>
-              <div class="col-md-auto text-center">
-                <img src="/Images/quiz.png" alt="quiz">
-                <p>Code Quiz</p>
-              </div>
-              <div class="col-md-1"></div>
-              <div class="col-md-auto text-center">
-                <img src="/Images/chatify.jpeg" alt="chatify">
-                <p>Chatify</p>
-              </div>
-              <div class="col-md-1"></div>
-              <div class="col-md-auto text-center">
-                <img src="/Images/pawfect.jpeg" alt="pawfect">
-                <p>Pawfect Dates</p>
-              </div>
-              <div class="col-md-2"></div>
             </div>
-          </div>
+          
+            
 
 
 
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
-        <script src="JS/script.js" async defer></script>
+        <script>
+          function updateClock() {
+    let today = new Date();
+    let min = today.getMinutes();
+    if (min < 10) {
+        min = `0${min}`;
+    }
+    let hour = today.getHours();
+    let ampm = "AM";
+    if (hour > 12) {
+        hour -= 12;
+        ampm = "PM";
+    }
+    let time = `${hour}:${min} ${ampm}`;
+    document.getElementById('displayTime').innerHTML = time;
+}
+setInterval(updateClock, 1000);
+        </script>
     </body>
 </html>
