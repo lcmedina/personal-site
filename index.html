@@ -7,38 +7,108 @@
         <title>Laura Medina</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="CSS/styles.css">
         <link rel="icon" href="Images/favicon.ico">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway&family=Shadows+Into+Light+Two&display=swap" rel="stylesheet">
-
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+        <link rel="stylesheet" href="CSS/pixel.css">
+        <link rel="stylesheet" href="CSS/styles.css">
+        <script src="https://kit.fontawesome.com/3d2e6fba10.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <nav id="navbar">
-            <a href="/index.html">Home</a>
-            <a href="/about.html">About</a>
-            <a href="/contact.html">Contact</a>
-            <a href="/projects.html">Projects</a>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark justify-content-between mb-3">
+            <ul class="navbar-nav navbar-nav-hover flex-row align-items-center">
+                <li class="nav-item">
+                    <a href="https://www.linkedin.com/in/laura-medina-90b8bb25/" class="nav-link" role="button" target="_blank">
+                        <span class="nav-link-inner-text"><i class="fab fa-linkedin-in fa-2x"></i> LinkedIn</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="https://github.com/lcmedina" class="nav-link" role="button" target="_blank">
+                        <span class="nav-link-inner-text"><i class="fab fa-github fa-2x"></i> Github</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="time text-center" id="displayTime">
+                <span class="text-uppercase" ></span>
+            </div>
         </nav>
+
+        <!-- "Desktop" -->
         <div class="container">
-            <div class="top-container container-sm">
-                <div class="intro container-sm">
-                    <h1 id="myName">Hi, I'm Laura & I'm a full stack developer.</h1>
-                    <h4>I'm fueled by coffee, tacos and a love of learning. Excited to share what I'm working on with you!</h4>
+            <div class="row justify-content-md-center buffer">
+              <div class="row justify-content-md-center" style="margin-bottom: 50px;">
+                <div class="col-12 col-lg-6 mb-4 mb-lg-0">
+                  <div class="card card-tertiary">
+                      <div class="card-header">
+                          <span class="icon icon-xs w95-folder"></span>
+                          <span class="ml-4">A Little Bit About Me</span>
+                      </div>
+                      <div class="card-body">
+                          <img src="/Images/about.jpeg" alt="about">
+                          <p class="card-text">Imperio nox serpensortia curse imperio patronum lacarnum locomotor wingardium. Langlock locomotor tarantallegra rictusempra curse patronum tarantallegra crucio. Evanesco aparecium tarantallegra kedavra petrificus totalus rictusempra alohomora evanesco oppungo engorgio. Aparecium wingardium conjunctivitis evanesco leviosa evanesco quietus petrificus sonorous. Lumos aresto stupefy inflamarae quietus scintillation leviosa portus alohomora cushioning. Lacarnum aresto leviosa ennervate banishing ennervate stupefy immobilus quietus. Engorgio charm alohomora arania quietus aparecium accio. Lumos leviosa reparo rictusempra protego totalus.</p>
+                      </div>
+                  </div>
                 </div>
-            </div>
-            <div class="middle-container container-sm">
-                <img src="images/NYC2018.jpg" alt="Photo of me in DUMBO, NYC" class="NYC">
-                <div id="text">
-                    <p>Like many millenials I was first introduced to coding in the early MySpace and Xanga days. I thought it was so awesome building something from scratch and seeing it displayed out on the world wide web. Eager to expand my portfolio and have some fun along the way!
-                    </p>
-                    <br>
-                    <a href="mailto:lcmedina390@gmail.com"><img src="images/email.svg" class="icons"></a>
-                    <a href="https://github.com/lcmedina"><img src="images/github.svg" class="icons"></a>
-                    <a href="https://www.linkedin.com/in/laura-medina-90b8bb25/"><img src="images/linkedin.svg" class="icons"></a>
+              </div>
+              <div class="col-md-auto text-center">
+                <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" style="border: none; background-color: transparent;">
+                  <img src="/Images/resume.jpeg" alt="resume">
+                </button>
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                    <div class="modal-content card">
+                      <h5 class="card-header" id="exampleModalLabel">My Resume</h5>
+                      <div class="card-body">
+                        <p class="lead">Summary</p>
+                        <p>Dedicated professional looking to break into the tech field as a web developer. Looking to flex my creative muscles and and bring my problem solving skills to the right team.</p>
+                        <hr>
+                        <p>📞 713-320-2249</p>
+                        <p>📧 lcmedina390@gmail.com</p>
+                        <hr>
+                        <p class="lead">Education</p>
+                        <p><u>Certificate in Software Engineering</u> | April 2021 - October 2021 | <em>Digital Crafts</em></p>
+                        <p><small> Software engineering training program covering full-stack development including, but not limited to JavaScript, HTML and CSS, including an emphasis on cutting-edge frameworks like React/Redux and server-side technologies including Node.js, Express, and PostgreSQL.</small></p>
+                        <p><u>B.S. Hotel and Restaurant Management</u> | 2008 - 2013 | <em>University of Houston</em></p>
+                        <p><small>A specialized business degree combining traditional business courses in accounting, economics and law with social sciences, hospitality marketing, human resources and communications.</small></p>
+                      </div>
+                      <div class="d-flex justify-content-end mt-3 card-footer">
+                        <a href="/LauraMedinaResume.pdf" download><button type="button" class="btn btn-primary">Download</button></a>
+                      </div>
+                    </div>
+                  </div>
                 </div>
+                <p class="icon-label">My Resume</p>
+              </div>
+              <div class="col-md-2"></div>
+              <div class="col-md-auto text-center">
+                <img src="/Images/skills.jpeg">
+                <p class="icon-label">Skills</p>
+              </div>
             </div>
-        </div>
-        <script src="Scripts/script.js" async defer></script>
+            <div class="row justify-content-md-center buffer">
+                <div class="col-md-2"></div>
+              <div class="col-md-auto text-center">
+                <img src="/Images/quiz.png" alt="quiz">
+                <p>Code Quiz</p>
+              </div>
+              <div class="col-md-1"></div>
+              <div class="col-md-auto text-center">
+                <img src="/Images/chatify.jpeg" alt="chatify">
+                <p>Chatify</p>
+              </div>
+              <div class="col-md-1"></div>
+              <div class="col-md-auto text-center">
+                <img src="/Images/pawfect.jpeg" alt="pawfect">
+                <p>Pawfect Dates</p>
+              </div>
+              <div class="col-md-2"></div>
+            </div>
+          </div>
+
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
+        <script src="JS/script.js" async defer></script>
     </body>
 </html>
