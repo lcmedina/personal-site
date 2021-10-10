@@ -1,0 +1,79 @@
+<div class="row justify-content-md-center buffer">
+            <div class="row justify-content-md-center" style="margin-bottom: 50px;">
+              <div class="col-12 col-lg-6 mb-4 mb-lg-0">
+                <div class="card card-tertiary">
+                  <div class="card-header">
+                    <span class="icon icon-xs w95-folder"></span>
+                    <span class="ml-4">A Little Bit About Me</span>
+                  </div>
+                  <div class="card-body">
+                    <img src="/Images/about.jpeg" alt="about">
+                    <p class="card-text">Imperio nox serpensortia curse imperio patronum lacarnum locomotor wingardium. Langlock locomotor tarantallegra rictusempra curse patronum tarantallegra crucio. Evanesco aparecium tarantallegra kedavra petrificus totalus rictusempra alohomora evanesco oppungo engorgio. Aparecium wingardium conjunctivitis evanesco leviosa evanesco quietus petrificus sonorous. Lumos aresto stupefy inflamarae quietus scintillation leviosa portus alohomora cushioning. Lacarnum aresto leviosa ennervate banishing ennervate stupefy immobilus quietus. Engorgio charm alohomora arania quietus aparecium accio. Lumos leviosa reparo rictusempra protego totalus.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-auto text-center">
+              <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" style="border: none; background-color: transparent;">
+                <img src="/Images/resume.jpeg" alt="resume">
+              </button>
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                    <div class="modal-content card card-tertiary">
+                      <h5 class="card-header" id="exampleModalLabel">My Resume</h5>
+                      <div class="card-body">
+                        <p class="lead">Summary</p>
+                        <p>Dedicated professional looking to break into the tech field as a web developer. Looking to flex my creative muscles and and bring my problem solving skills to the right team.</p>
+                        <hr>
+                        <p>📞 713-320-2249</p>
+                        <p>📧 lcmedina390@gmail.com</p>
+                        <hr>
+                        <p class="lead">Education</p>
+                        <p><u>Certificate in Software Engineering</u> | April 2021 - October 2021 | <em>Digital Crafts</em></p>
+                        <p><small> Software engineering training program covering full-stack development including, but not limited to JavaScript, HTML and CSS, including an emphasis on cutting-edge frameworks like React/Redux and server-side technologies including Node.js, Express, and PostgreSQL.</small></p>
+                        <p><u>B.S. Hotel and Restaurant Management</u> | 2008 - 2013 | <em>University of Houston</em></p>
+                        <p><small>A specialized business degree combining traditional business courses in accounting, economics and law with social sciences, hospitality marketing, human resources and communications.</small></p>
+                      </div>
+                      <div class="d-flex justify-content-between mt-3 card-footer">
+                        <button type="button" class="btn btn-tertiary border-dark" data-bs-dismiss="modal" aria-label="Close">Close</button>
+                        <a href="/LauraMedinaResume.pdf" download><button type="button" class="btn btn-primary border-dark">Download</button></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <p class="icon-label">My Resume</p>
+            </div>
+            <div class="col-md-auto text-center">
+                <button type="button" data-bs-toggle="modal" data-bs-target="#skillsModal" style="border: none; background-color: transparent;">
+                  <img src="/Images/skills.jpeg" alt="skills">
+                </button>
+                <div class="modal fade" id="skillsModal" tabindex="-1" aria-labelledby="skillsModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content card card-tertiary">
+                      <h5 class="card-header" id="skillsModalLabel">My Skills</h5>
+                      <div class="card-body">
+                        <div class="container">
+                          <div class="row">
+                            <div class="col"><img src="./Images/skills-icons/css.png" alt="css"></div>
+                            <div class="col"><img src="./Images/skills-icons/html.png" alt="html"></div>
+                            <div class="col"><img src="./Images/skills-icons/javascript.png" alt="JavaScript"></div>
+                          </div>
+                          <div class="row">
+                            <div class="col"><img src="./Images/skills-icons/nodejs.png" alt="node.js"></div>
+                            <div class="col"><img src="./Images/skills-icons/react.png" alt="react"></div>
+                            <div class="col"><img src="./Images/skills-icons/Bootstrap_logo.svg.png" alt="bootstrap"></div>
+                          </div>
+                          <div class="row">
+                            <img src="./Images/skills-icons/mongo.png" alt="mongoDB">
+                          </div>
+                        </div>
+                        <div><p><small>Icons made by <a href="https://www.flaticon.com/authors/flat-icons" title="Flat Icons">Flat Icons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></small></p></div>
+                        <div class="d-flex justify-content-center mt-3 card-footer">
+                          <button type="button" class="btn btn-tertiary border-dark" data-bs-dismiss="modal" aria-label="Close">Close</button></div>
+                      </div>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="icon-label">Skills</p>
+            </div>
+          </div>
