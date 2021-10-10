@@ -14,7 +14,7 @@ body img {
     margin-top: 50px;
     margin-bottom: 100px;
 }
-.card img {
+#me {
     float: left;
     margin: 10px;
     height: 20%;
@@ -22,7 +22,7 @@ body img {
 }
 
 @media only screen and (max-width: 768px) {
-    .card img {
+    #me {
     display: block;
     margin: auto;
     height: 100%;
@@ -32,6 +32,14 @@ body img {
     .card {
     text-align: center;
     }
+    #tab-img {
+     display: block;
+    margin: auto;
+    height: 50%;
+    width: 50%;
+    padding-bottom: 5%;
+    float: none;
+    }
 }
 .tab-content {
     border-left: 2px solid white;
@@ -39,7 +47,12 @@ body img {
     border-bottom: 2px solid #858585;
     padding: 10px;
 }
-
 .nav-tabs {
     margin-bottom: 0;
+}
+.tab-pane img {
+    height: 20%;
+    width: 20%;
+    float: left;
+    margin-right: 5%;
 }
