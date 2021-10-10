@@ -18,3 +18,13 @@ body img {
     float: left;
     margin: 10px;
 }
+.tab-content {
+    border-left: 2px solid white;
+    border-right: 2px solid #858585;
+    border-bottom: 2px solid #858585;
+    padding: 10px;
+}
+
+.nav-tabs {
+    margin-bottom: 0;
+}
