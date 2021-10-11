@@ -310,12 +310,12 @@
         min = `0${min}`;
     }
     let hour = today.getHours();
-    let ampm = "";
-    if (hour >= 12) {
+    let ampm = "AM";
+    if (hour > 12) {
         hour -= 12;
         ampm = "PM";
-    } else {
-        ampm = "AM";
+    } else if (hour = 12) {
+        ampm = "PM";
     };
     let time = `${hour}:${min} ${ampm}`;
     document.getElementById('displayTime').innerHTML = time;
