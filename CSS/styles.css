@@ -56,3 +56,21 @@ body img {
     float: left;
     margin-right: 5%;
 }
+
+.carousel {
+    height: 20%;
+    width: 20%;
+    float: left;
+    margin-right: 5%; 
+}
+
+.skills img {
+    width: 100%;
+    height: 100%;
+}
+
+#large-icons img {
+    width: 75%;
+    height: 70%;
+    padding-top: 10px;
+}

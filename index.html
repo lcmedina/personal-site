@@ -108,7 +108,7 @@
                       </div>
                       <div class="d-flex justify-content-between mt-3 card-footer">
                         <button type="button" class="btn btn-tertiary border-dark" data-bs-dismiss="modal" aria-label="Close">Close</button>
-                        <a href="/LauraMedinaResume.pdf" download><button type="button" class="btn btn-primary border-dark">Download</button></a>
+                        <a href="/LauraMedinaResumeOct21.pdf" download><button type="button" class="btn btn-primary border-dark">Download</button></a>
                       </div>
                     </div>
                   </div>
@@ -127,19 +127,22 @@
                     <h5 class="card-header" id="skillsModalLabel">My Skills</h5>
                     <div class="card-body">
                       <div class="container">
-                        <div class="row justify-content-center">
-                          <div class="col mb-2"><img src="./Images/skills-icons/css.png" alt="css"></div>
-                          <div class="col mb-2"><img src="./Images/skills-icons/html.png" alt="html"></div>
-                          <div class="col mb-2"><img src="./Images/skills-icons/javascript.png" alt="JavaScript"></div>
-                          <div class="col mb-2"><img src="./Images/skills-icons/nodejs.png" alt="node.js"></div>
-                          <div class="col mb-2"><img src="./Images/skills-icons/react.png" alt="react"></div>
-                          <div class="col mb-2"><img src="./Images/skills-icons/Bootstrap_logo.svg.png" alt="bootstrap"></div>
-                        </div>
-                        <div class="row">
-                          <img src="./Images/skills-icons/mongo.png" alt="mongoDB">
+                        <div class="row justify-content-center skills">
+                          <div class="row">
+                          <div class="col mb-2"><img src="./Images/skills-icons/nodejs.png" alt="nodejs"></div>
+                          <div class="col mb-2"><img src="./Images/skills-icons/Expressjs.png" alt="Expressjs"></div>
+                          <div class="col mb-2"><img src="./Images/skills-icons/netlify.png" alt="netlify"></div></div>
+                          <div class="row">
+                          <div class="col mb-2"><img src="./Images/skills-icons/heroku.png" alt="heroku"></div>
+                          <div class="col mb-2"><img src="./Images/skills-icons/react2.png" alt="react"></div>
+                          <div class="col mb-2"><img src="./Images/skills-icons/postgres.png" alt="PostgreSQL"></div></div>
+                          <div class="row">
+                          <div class="col-6"><img src="./Images/skills-icons/bootstrap.png" alt="bootstrap"></div>
+                            <div class="col-6" id="large-icons"><img src="/Images/skills-icons/big3.png" alt="HTML CSS JS"></div>
+                          </div>
+                          <div class="row"><div class="col-6"><img src="/Images/skills-icons/firebase2.png" alt="firebase"></div><div class="col-6"><img src="./Images/skills-icons/mongo.png" alt="mongoDB"></div></div>
                         </div>
                       </div>
-                      <div><p><small>Icons made by <a href="https://www.flaticon.com/authors/flat-icons" title="Flat Icons">Flat Icons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></small></p></div>
                       <div class="d-flex justify-content-center mt-3 card-footer">
                         <button type="button" class="btn btn-tertiary border-dark" data-bs-dismiss="modal" aria-label="Close">Close</button></div>
                     </div>
@@ -256,10 +259,57 @@
                   <span class="btn-text"><i class="fab fa-github fa-2x"></i> Github</span></button>
                 </div>
                 </div>
-                <div class="tab-pane fade" id="pawfect" role="tabpanel" aria-labelledby="pawfect-tab"><img src="/Images/projects/dog.png" alt="Pawfect Dates" id="tab-img"><h1>Coming Soon...</h1><p>Think tinder but play dates for your dog! Currently a work in progress.</p>
+                <div class="tab-pane fade" id="pawfect" role="tabpanel" aria-labelledby="pawfect-tab">
+                  <!-- Picture carousel -->
+                  <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="/Images/projects/login.png" class="d-block w-100" alt="login">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="/Images/projects/profile1.png" class="d-block w-100" alt="user profile">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="/Images/projects/profile2.png" class="d-block w-100" alt="user profile">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="/Images/projects/matches.png" class="d-block w-100" alt="matches">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                  <h6>Pawfect Dates</h6>
+                  <br>
+                  <div class="row">
+                    <div class="col-6">
+                      <p>An app inspired by finding your dog's new bestie! This is a React Native app built as my capstone for Digital Crafts. Users create an authenticated account and unique profile to connect with others. Socialization is key to raising a happy and healthy pup, and I wanted to make an app specifically geared towards that audience. Currently the messages page shows the users someone has liked, but I would like to add an actual chat feature in the future. Along with geolocation to show dog owners nearby!</p>
+                    </div>
+                    <div class="col-6">
+                      <h6>Built With</h6>
+                      <ul>
+                        <li>React Native</li>
+                        <li>Expo</li>
+                        <li>Firebase</li>
+                        <li>Firestore</li>
+                      </ul>
+                    </div>
+                  </div>
                   <div class="d-flex justify-content-end">
-                  <button class="btn mr-2 mb-2 btn-tertiary" type="button" onclick="window.open('')">
-                  <span class="btn-text">Live Demo</span></button>
+                  <button class="btn mr-2 mb-2 btn-tertiary" type="button" onclick="window.open('https://youtu.be/8ozN1NMcCPQ')">
+                  <span class="btn-text">Demo Video</span></button>
                   <button class="btn mr-2 mb-2 btn-secondary" type="button" onclick="window.open('https://github.com/lcmedina/PawfectDates')">
                     <span class="btn-text"><i class="fab fa-github fa-2x"></i> Github</span></button> 
                   </div>
