@@ -30,6 +30,7 @@
                   // these IDs from the previous steps
                   emailjs.sendForm('contact_service', 'contact_form', this)
                       .then(function() {
+                          alert("Thanks for getting in contact! I'll reach out soon.")
                           console.log('SUCCESS!');
                       }, function(error) {
                           console.log('FAILED...', error);
